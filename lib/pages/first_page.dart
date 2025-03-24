@@ -15,17 +15,17 @@ class FirstPage extends StatelessWidget {
         child: Container(
           margin: EdgeInsets.all(32),
           child: GridView.builder(
-          itemCount: 32,
-          gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-            crossAxisCount: 8,
+            itemCount: 32,
+            gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+              crossAxisCount: 8,
+            ),
+            itemBuilder:
+                (context, index) => Container(
+                  color: Colors.greenAccent,
+                  margin: EdgeInsets.all(2),
+                ),
           ),
-          itemBuilder:
-              (context, index) => Container(
-                color: Colors.greenAccent,
-                margin: EdgeInsets.all(2),
-              ),
         ),
-        )
       ),
     );
   }

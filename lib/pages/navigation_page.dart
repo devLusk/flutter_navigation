@@ -20,20 +20,14 @@ class NavagationPage extends StatelessWidget {
           children: [
             ElevatedButton(
               onPressed: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(builder: (context) => FirstPage()),
-                );
+                Navigator.pushNamed(context, 'firstpage');
               },
               child: Text("1nd Page"),
             ),
             SizedBox(width: 12),
             ElevatedButton(
               onPressed: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(builder: (context) => SecondPage()),
-                );
+                Navigator.pushNamed(context, 'secondpage');
               },
               child: Text("2nd Page"),
             ),
